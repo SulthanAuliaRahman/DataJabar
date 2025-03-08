@@ -23,17 +23,17 @@ import androidx.navigation.compose.rememberNavController
 fun MainScreen() {
     val navController = rememberNavController()
     val bottomItems = listOf(
-        Screen.Home to Icons.Default.Home,
-        Screen.Search to Icons.Default.Search,
+        Screen.Summary to Icons.Default.Home,
+        Screen.Jabar to Icons.Default.Done,
         Screen.Profile to Icons.Default.Person,
-        Screen.Jabar to Icons.Default.Done
+
     )
 
     Scaffold(
         bottomBar = {
             val navBackStackEntry by navController.currentBackStackEntryAsState()
             val currentRoute = navBackStackEntry?.destination?.route
-            if (currentRoute != Screen.Onboarding.route) {
+            if (currentRoute != Screen.Onboarding.route && currentRoute != Screen.Splash.route ) {
                 NavigationBar {
                     bottomItems.forEach { (screen, icon) ->
                         NavigationBarItem(

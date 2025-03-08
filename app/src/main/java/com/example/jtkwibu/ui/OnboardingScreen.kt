@@ -21,9 +21,9 @@ data class OnboardingPage(
 )
 
 val pages = listOf(
-    OnboardingPage("Welcome", "Explore anime!", R.drawable.naruto_mark_z ),
-    OnboardingPage("Search", "Find your favorites!", R.drawable.naruto_mark_z,),
-    OnboardingPage("Profile", "Make it yours!", R.drawable.naruto_mark_z)
+    OnboardingPage("Welcome", "To Data Jabar", R.drawable.naruto_mark_z ),
+    OnboardingPage("Proyek 4", "Data Harapan Lama Sekolah (Menggunakan SP2010) Berdasarkan Kabupaten/Kota di Jawa Barat", R.drawable.mugiwara_no_zuffy,),
+    OnboardingPage("Profile", "Nama : SulthanAuliaRahman(231511094)", R.drawable.kakashi_mark_z)
 )
 
 @Composable

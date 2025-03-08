@@ -19,6 +19,6 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "JTKWIbu"
+rootProject.name = "DataJabar"
 include(":app")
  
