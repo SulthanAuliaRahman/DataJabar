@@ -61,6 +61,19 @@ dependencies {
     debugImplementation(libs.androidx.ui.tooling)
     debugImplementation(libs.androidx.ui.test.manifest)
 
+    // Navigation
+    implementation(libs.androidx.navigation.runtime.ktx)
+    implementation(libs.androidx.navigation.compose)
+
+
+    // Core AndroidX
+    implementation(libs.androidx.core.ktx)
+    implementation(libs.androidx.lifecycle.runtime.ktx)
+    implementation(libs.androidx.lifecycle.runtime.compose)
+    implementation(libs.androidx.lifecycle.viewmodel.compose)
+    implementation(libs.androidx.lifecycle.viewmodel.ktx)
+    implementation(libs.androidx.activity.compose)
+
     implementation ("com.squareup.retrofit2:retrofit:2.11.0")
     implementation ("com.squareup.retrofit2:converter-gson:2.11.0")
     implementation ("com.squareup.okhttp3:logging-interceptor:4.12.0")

@@ -26,7 +26,7 @@ fun MainScreen() {
         Screen.Home to Icons.Default.Home,
         Screen.Search to Icons.Default.Search,
         Screen.Profile to Icons.Default.Person,
-        Screen.Bookmark to Icons.Default.Done
+        Screen.Jabar to Icons.Default.Done
     )
 
     Scaffold(

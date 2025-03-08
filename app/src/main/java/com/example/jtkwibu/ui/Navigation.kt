@@ -10,7 +10,7 @@ sealed class Screen(val route: String) {
     object Onboarding : Screen("onboarding")
     object Home : Screen("home")
     object Search : Screen("search")
-    object Bookmark : Screen("bookmark")
+    object Jabar : Screen("Jabar")
     object Profile : Screen("profile")
 }
 
@@ -22,17 +22,19 @@ fun AppNavHost(navController: NavHostController) {
         composable(Screen.Onboarding.route) {
             OnboardingScreen(
                 onFinish = {
-                    navController.navigate(Screen.Home.route) {
+                    navController.navigate(Screen.Jabar.route) {
                         popUpTo(Screen.Onboarding.route) { inclusive = true }
                     }
                 }
             )
         }
+        composable(Screen.Jabar.route) {
+            JabarScreen()
+        }
         composable(Screen.Home.route) { HomeScreen(onAnimeClick = {  }) }
         composable(Screen.Search.route) {
             SearchScreen(onAnimeClick = {  })
         }
-        composable(Screen.Bookmark.route) { BookmarkScreen(onAnimeClick = {  }) }
         composable(Screen.Profile.route) {
             ProfileScreen(context = context)  // Kirim context ke ProfileScreen
         }
